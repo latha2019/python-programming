@@ -1,4 +1,5 @@
 import os
+import csv
 location = r"C:\Users\ltbx\Downloads\exercises.csv"
 with open(location,'r') as f:
     lines = f.readlines()
