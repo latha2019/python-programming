@@ -8,6 +8,6 @@ while count <= 12:
     third = firstnum + secnum
     if third % 2 == 0:
         print(third)
-        count = count + 1
+        count += 1
 
     firstnum, secnum = secnum, third
