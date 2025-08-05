@@ -1,0 +1,13 @@
+#take the list and calculate the frequency of the each word
+weekdays = ['sun','mon','tue','wed','thu','fri','sat','sun','tue']
+# count = dict()
+count = {}
+for key in weekdays:
+    if key in count:
+        # count +=
+        count[key] += 1
+    else :
+        count[key] = 1
+    # print(key,":", count[key] )
+for k, v in count.items():
+    print(k, ":", v)
