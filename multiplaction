@@ -1,0 +1,12 @@
+# print the multiplaction of given number using for or while loops
+
+num = int(input("Enter the number to get multiplication table: "))
+print("Multiplication using for loop")
+for i in range(1,11):
+    print(num, "*", i, "=", i*num)
+
+print("\nMultiplication using while loop")
+i=1
+while i < 11:
+    print(num, "*", i, "=", i * num)
+    i += 1
