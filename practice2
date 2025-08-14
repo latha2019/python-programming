@@ -1,0 +1,41 @@
+#Ask the users to enter a number till he enters 0
+# print the maximum and minimum values among all the entered numbers
+#print the numbers of single, two, three digit numbers entered.
+
+print("Enter list of numbers & enters 0 to end the input: ")
+i = 1
+numlist = []
+while i > 0:
+    num = int(input())
+    if num == 0:
+        break
+    numlist.append(num)
+
+# print the maximum and minimum values among all the entered numbers
+print("Entered numbers are:", numlist)
+largest = numlist[0]
+smallest = numlist[0]
+for val in numlist:
+    if val > largest:
+        largest = val
+    if  val < smallest:
+        smallest = val
+print("maximum and minimum values among all the entered numbers")
+print("maximum:", largest, " minimum:", smallest)
+
+#print the numbers of single, two, three digit numbers entered.
+single_digit = 0
+two_digit = 0
+three_digit = 0
+for dig in numlist:
+    if 0 < dig <= 9:
+        single_digit += 1
+    elif 9 < dig <= 99:
+        two_digit += 1
+    elif 99 < dig <= 999:
+        three_digit += 1
+    else:
+        print("number is out of range ")
+print(f"single_digit count :{single_digit}")
+print(f"Two_digit count :{two_digit}")
+print(f"three_digit count :{three_digit}")
