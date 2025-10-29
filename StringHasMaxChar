@@ -17,3 +17,20 @@ for i in charcount:
 # print(charcount.index(largest))
 largstr = charcount.index(largest)
 print("The string that has max character in it :",list1[largstr])
+
+
+
+OR
+
+list1 = ["python", "java12345", "abcdefghijk"]
+
+countl = []
+for i in list1:
+   countl.append(len(i))
+
+max_char_count = countl[0]
+for j in countl:
+    if j > max_char_count:
+        max_char_count = j
+            
+print(list1[countl.index(max_char_count)])
