@@ -11,3 +11,21 @@ while count <= 12:
         count += 1
 
     firstnum, secnum = secnum, third
+
+
+OR
+
+first = 1
+sec = 1
+count = 1
+while True :
+    third = first + sec
+    # print("....",third,".....")
+    if third % 2 == 0:
+        print(third)
+        count += 1
+
+    if count >=12:
+        break
+
+    first, sec = sec, third
