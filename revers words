@@ -1,0 +1,7 @@
+#reverse words in the strings
+
+text = "Hello world this is Python"
+revers_list = text.split()
+rev_str = revers_list[::-1]
+reve = " ".join(rev_str)
+print(reve)
